@@ -1,0 +1,20 @@
+{
+  "name": "taobao-tools",
+  "interface": {
+    "displayName": "淘宝开发工具"
+  },
+  "plugins": [
+    {
+      "name": "taobao-ide-console",
+      "source": {
+        "source": "local",
+        "path": "./plugins/taobao-ide-console"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

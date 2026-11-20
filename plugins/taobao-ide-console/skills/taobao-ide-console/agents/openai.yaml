@@ -1,0 +1,4 @@
+interface:
+  display_name: "淘宝 IDE 调试器日志"
+  short_description: "读取淘宝开发者工具调试器日志，支持嵌套对象字段展开和关键词筛选"
+  default_prompt: "使用 $taobao-ide-console 读取当前项目的调试器日志，并概括相关错误。"

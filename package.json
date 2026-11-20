@@ -1,0 +1,13 @@
+{
+  "name": "codex-taobao-ide-console",
+  "version": "0.1.0",
+  "private": true,
+  "description": "淘宝 IDE 调试日志 Codex 插件",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.cjs plugins/taobao-ide-console/skills/taobao-ide-console/scripts/read-console.test.cjs"
+  }
+}
