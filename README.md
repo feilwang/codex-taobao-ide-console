@@ -29,10 +29,10 @@ $taobao-ide-console:taobao-ide-console
 
 ## 从 GitHub 安装
 
-仓库发布后，将 `YOUR_USERNAME` 替换为实际 GitHub 用户名：
+从 [GitHub 仓库](https://github.com/feilwang/codex-taobao-ide-console) 添加插件源并安装：
 
 ```bash
-codex plugin marketplace add YOUR_USERNAME/codex-taobao-ide-console
+codex plugin marketplace add feilwang/codex-taobao-ide-console
 codex plugin add taobao-ide-console@taobao-tools
 ```
 
@@ -72,21 +72,6 @@ npm test
 ```
 
 测试使用 Node.js 内置测试工具和模拟协议，无需安装依赖，也不要求真实 IDE。测试包含插件目录和清单引用验证、日志筛选、对象展开、访问器跳过、超时及会话释放。
-
-## 发布到 GitHub
-
-确认 GitHub CLI 已登录，在仓库根目录执行以下命令。`--public` 会创建公开仓库；仅在确定公开后执行。
-
-```bash
-git add .
-git commit -m "feat: 初始化淘宝 IDE 调试日志插件"
-gh repo create YOUR_USERNAME/codex-taobao-ide-console --public --source=. --remote=origin --push
-git tag v0.1.0
-git push origin v0.1.0
-gh release create v0.1.0 --title "v0.1.0" --generate-notes
-```
-
-后续更新同步调整插件 manifest 和根 `package.json` 的版本，并在发布前执行测试。根 `package.json` 仅提供开发测试入口，不发布 npm 包。
 
 参考：[插件打包与 marketplace](https://developers.openai.com/plugins/build/plugins)、[仅本地执行插件](https://developers.openai.com/plugins/deploy/desktop-only)。
 
